@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.fengmang.xeniadialog.widget.ChannelFocusControlLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="@dimen/size_432"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#55555555">
+
+        <tv.fengmang.xeniadialog.widget.MenuRecyclerView
+            android:id="@+id/rv_menu_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</tv.fengmang.xeniadialog.widget.ChannelFocusControlLayout>

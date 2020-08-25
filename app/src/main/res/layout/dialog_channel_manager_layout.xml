@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tv.fengmang.xeniadialog.widget.ChannelFocusControlLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_channel_bg">
+
+        <RelativeLayout
+            android:id="@+id/login_layout"
+            android:layout_width="@dimen/size_260"
+            android:layout_height="wrap_content"
+            android:nextFocusDown="@+id/recycler_tv_class">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_login_icon"
+                android:layout_width="@dimen/size_138"
+                android:layout_height="@dimen/size_138"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/size_18"
+                android:clickable="true"
+                android:focusable="true"
+                app:placeholderImage="@drawable/user_icon_default" />
+
+            <TextView
+                android:id="@+id/tv_watch_hd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sdv_login_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/size_24"
+                android:text="登录看高清"
+                android:textColor="#BD8E34"
+                android:textSize="@dimen/size_28" />
+
+
+            <RelativeLayout
+                android:layout_width="@dimen/size_260"
+                android:layout_height="@dimen/size_132"
+                android:layout_below="@+id/tv_watch_hd"
+                android:id="@+id/rv_search"
+                android:background="@drawable/normal_bg_selector"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:id="@+id/tv_class_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/size_54"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="搜索"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/size_36" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <tv.fengmang.xeniadialog.widget.MenuRecyclerView
+            android:id="@+id/recycler_tv_class"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/login_layout" />
+
+        <tv.fengmang.xeniadialog.widget.MenuRecyclerView
+            android:id="@+id/recycler_provinces"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/recycler_tv_class"
+            android:visibility="gone" />
+
+        <tv.fengmang.xeniadialog.widget.MenuRecyclerView
+            android:id="@+id/recycler_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/recycler_provinces"
+            android:nextFocusLeft="@+id/recycler_tv_class"
+            android:nextFocusUp="@+id/recycler_channel" />
+
+        <RelativeLayout
+            android:id="@+id/rv_empty_channel"
+            android:layout_width="@dimen/size_548"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/recycler_provinces"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="没有频道数据!" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/qr_code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/content_layout"
+        android:background="#CC2B2B2B">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/size_852"
+            android:layout_height="@dimen/size_856"
+            android:layout_centerInParent="true"
+            app:placeholderImage="@drawable/wx_scan_login" />
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</tv.fengmang.xeniadialog.widget.ChannelFocusControlLayout>

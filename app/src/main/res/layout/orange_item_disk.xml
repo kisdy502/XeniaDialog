@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/size_342"
+    android:layout_height="@dimen/size_466"
+    android:layout_margin="@dimen/size_32"
+    android:background="@drawable/file_bg_selector"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tv_disk_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_12"
+        android:layout_marginTop="@dimen/size_24"
+        android:maxLines="1"
+        android:text="SD卡"
+        android:textColor="#22227C"
+        android:textSize="@dimen/size_30" />
+
+
+    <TextView
+        android:id="@+id/tv_disk_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_disk_label"
+        android:layout_marginLeft="@dimen/size_12"
+        android:layout_marginTop="@dimen/size_64"
+        android:maxLines="1"
+        android:textColor="#7C7C7C"
+        android:textSize="@dimen/size_24" />
+
+
+    <TextView
+        android:id="@+id/tv_size_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_disk_path"
+        android:layout_marginLeft="@dimen/size_12"
+        android:layout_marginTop="@dimen/size_64"
+        android:layout_marginBottom="@dimen/size_24"
+        android:maxLines="1"
+        android:text="可用(总共):120(300)MB"
+        android:textColor="#7C7C7C"
+        android:textSize="@dimen/size_27" />
+
+</RelativeLayout>

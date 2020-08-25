@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ip2MacActivity">
+
+    <EditText
+        android:id="@+id/edt_ip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_120"
+        android:layout_margin="@dimen/size_24"
+        android:enabled="false"
+        android:hint="请输入本设备Ip地址:"
+        android:padding="@dimen/size_12"
+        android:text="192.168.1.100"
+        android:textSize="@dimen/size_60"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_download01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_24"
+        android:layout_marginTop="@dimen/size_160"
+        android:background="@drawable/normal_bg_selector"
+        android:padding="@dimen/size_14"
+        android:text="download01"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_download02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_32"
+        android:layout_marginTop="@dimen/size_160"
+        android:background="@drawable/normal_bg_selector"
+        android:padding="@dimen/size_14"
+        android:text="download02"
+        app:layout_constraintLeft_toRightOf="@id/btn_download01"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_download03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_32"
+        android:layout_marginTop="@dimen/size_160"
+        android:background="@drawable/normal_bg_selector"
+        android:padding="@dimen/size_14"
+        android:text="download03"
+        app:layout_constraintLeft_toRightOf="@id/btn_download02"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_clear_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_32"
+        android:layout_marginTop="@dimen/size_160"
+        android:background="@drawable/normal_bg_selector"
+        android:padding="@dimen/size_14"
+        android:text="Clear Download File"
+        app:layout_constraintLeft_toRightOf="@id/btn_download03"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

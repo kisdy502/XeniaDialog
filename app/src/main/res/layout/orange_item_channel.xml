@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/size_518"
+    android:layout_height="@dimen/size_153"
+    android:background="@drawable/normal_bg_selector"
+    android:clickable="true"
+    android:focusable="true">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_collected"
+        android:layout_width="@dimen/size_36"
+        android:layout_height="@dimen/size_36"
+        android:layout_marginLeft="@dimen/size_18"
+        android:layout_marginTop="@dimen/size_18"
+        app:placeholderImage="@drawable/icon_collect_normal" />
+
+    <TextView
+        android:id="@+id/tv_channel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_64"
+        android:layout_marginTop="@dimen/size_18"
+        android:gravity="left"
+        android:maxLines="1"
+        android:textColor="#888888"
+        android:textSize="@dimen/size_36" />
+
+    <tv.fengmang.xeniadialog.widget.JumpingView
+        android:id="@+id/jumping_view"
+        android:layout_width="@dimen/size_30"
+        android:layout_height="@dimen/size_25"
+        android:layout_marginLeft="@dimen/size_18"
+        android:layout_marginTop="@dimen/size_72"
+        android:visibility="gone"
+        app:orange_default_color="#0098FF"
+        app:orange_small_height="@dimen/size_25"
+        app:orange_small_width="@dimen/size_30" />
+
+
+</RelativeLayout>

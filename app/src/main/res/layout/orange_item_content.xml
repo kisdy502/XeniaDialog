@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tv_crash_file"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:paddingLeft="@dimen/size_24"
+    android:paddingRight="@dimen/size_24"
+    android:paddingTop="@dimen/size_4"
+    android:paddingBottom="@dimen/size_4"
+    android:background="@drawable/file_bg_selector"
+    android:clickable="true"
+    android:focusable="true"
+    android:textColor="#272727"
+    android:textSize="@dimen/size_30" />

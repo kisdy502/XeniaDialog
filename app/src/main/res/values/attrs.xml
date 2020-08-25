@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="orange_JumpingView">
+        <attr name="orange_small_width" format="dimension|reference"/>
+        <attr name="orange_small_height" format="dimension|reference"/>
+        <attr name="orange_default_color" format="color|reference"/>
+    </declare-styleable>
+
+
+
+</resources>

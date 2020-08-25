@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#555555"
+    tools:context="tv.fengmang.xeniadialog.IndexActivity">
+
+    <Button
+        android:id="@+id/show_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/normal_bg_selector"
+        android:focusableInTouchMode="true"
+        android:padding="18dp"
+        android:text="start Dialog"
+        android:textAllCaps="false"
+        android:textColor="#EEEEEE"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/show_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/normal_bg_selector"
+        android:focusableInTouchMode="true"
+        android:padding="18dp"
+        android:text="start Setting"
+        android:textAllCaps="false"
+        android:textColor="#EEEEEE"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/check_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/normal_bg_selector"
+        android:focusableInTouchMode="true"
+        android:padding="18dp"
+        android:text="Check Dialog"
+        android:textAllCaps="false"
+        android:textColor="#EEEEEE"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/jump_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/normal_bg_selector"
+        android:focusableInTouchMode="true"
+        android:padding="18dp"
+        android:text="前往别的界面"
+        android:textAllCaps="false"
+        android:textColor="#EEEEEE"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/menu_opt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="460dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/normal_bg_selector"
+        android:focusableInTouchMode="true"
+        android:padding="18dp"
+        android:text="停止"
+        android:textAllCaps="false"
+        android:textColor="#EEEEEE"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/menu_to_crash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/normal_bg_selector"
+        android:focusableInTouchMode="true"
+        android:padding="18dp"
+        android:text="打开崩溃日志管理界面"
+        android:textAllCaps="false"
+        android:textColor="#EEEEEE"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/menu_to_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="330dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/normal_bg_selector"
+        android:focusableInTouchMode="true"
+        android:padding="18dp"
+        android:text="打开调试日志管理界面"
+        android:textAllCaps="false"
+        android:textColor="#EEEEEE"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/menu_to_disk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="340dp"
+        android:background="@drawable/normal_bg_selector"
+        android:focusableInTouchMode="true"
+        android:padding="18dp"
+        android:text="本机磁盘列表"
+        android:textAllCaps="false"
+        android:textColor="#EEEEEE"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/to_image_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="340dp"
+        android:background="@drawable/normal_bg_selector"
+        android:focusableInTouchMode="true"
+        android:padding="18dp"
+        android:text="图片列表"
+        android:textAllCaps="false"
+        android:textColor="#EEEEEE"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toRightOf="@+id/menu_to_disk"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/ip_to_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="430dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/normal_bg_selector"
+        android:focusableInTouchMode="true"
+        android:padding="18dp"
+        android:text="IP转mac"
+        android:textAllCaps="false"
+        android:textColor="#EEEEEE"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

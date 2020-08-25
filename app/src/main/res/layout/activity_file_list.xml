@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tv.sdt.mvp.ui.FileListActivity">
+
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="@dimen/size_296"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#88888888"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <tv.fengmang.xeniadialog.widget.MenuRecyclerView
+            android:id="@+id/rv_menu_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <tv.fengmang.xeniadialog.widget.MenuRecyclerView
+        android:id="@+id/rv_file_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/menu" />
+
+</RelativeLayout>

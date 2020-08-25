@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/size_260"
+    android:layout_height="@dimen/size_132"
+    android:background="@drawable/normal_bg_selector"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tv_class_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/size_54"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/size_36" />
+
+
+    <tv.fengmang.xeniadialog.widget.JumpingView
+        android:id="@+id/jumping_view"
+        android:layout_width="@dimen/size_33"
+        android:layout_height="@dimen/size_27"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/size_18"
+        android:visibility="invisible"
+        app:orange_default_color="#0098FF"
+        app:orange_small_height="@dimen/size_27"
+        app:orange_small_width="@dimen/size_33" />
+
+
+</RelativeLayout>

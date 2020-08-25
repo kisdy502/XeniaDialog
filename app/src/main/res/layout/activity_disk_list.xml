@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F2FE"
+    tools:context="tv.sdt.mvp.ui.DiskListActivity">
+
+    <Button
+        android:id="@+id/btn_to_root_dir"
+        android:layout_width="@dimen/size_204"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_56"
+        android:layout_marginTop="@dimen/size_600"
+        android:background="@drawable/normal_bg_selector"
+        android:text="磁盘根目录"
+        android:textColor="#77D777"
+        android:textSize="@dimen/size_27"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <tv.fengmang.xeniadialog.widget.MenuRecyclerView
+        android:id="@+id/rv_disk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_16"
+        android:scrollbars="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

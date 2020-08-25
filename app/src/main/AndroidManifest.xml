@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tv.fengmang.xeniadialog">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_DREAM_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Ip2MacActivity"></activity>
+        <activity
+            android:name="tv.sdt.mvp.ui.FileListActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="tv.sdt.mvp.ui.DiskListActivity" />
+        <activity android:name="tv.sdt.mvp.ui.TextReadActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:host="*" />
+                <data android:pathPattern=".*\\.txt" />
+                <data android:pathPattern=".*\\..*\\.txt" />
+                <data android:pathPattern=".*\\..*\\..*\\.txt" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.txt" />
+                <data android:pathPattern=".*\\.log" />
+                <data android:pathPattern=".*\\..*\\.log" />
+                <data android:pathPattern=".*\\..*\\..*\\.log" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.log" />
+                <data android:pathPattern=".*\\.rc" />
+                <data android:pathPattern=".*\\..*\\.rc" />
+                <data android:pathPattern=".*\\..*\\..*\\.rc" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.rc" />
+                <data android:pathPattern=".*\\.java" />
+                <data android:pathPattern=".*\\..*\\.java" />
+                <data android:pathPattern=".*\\..*\\..*\\.java" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.java" />
+                <data android:pathPattern=".*\\.json" />
+                <data android:pathPattern=".*\\..*\\.json" />
+                <data android:pathPattern=".*\\..*\\..*\\.json" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.json" />
+                <data android:pathPattern=".*\\.xml" />
+                <data android:pathPattern=".*\\..*\\.xml" />
+                <data android:pathPattern=".*\\..*\\..*\\.xml" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.xml" />
+                <data android:pathPattern=".*\\.html" />
+                <data android:pathPattern=".*\\..*\\.html" />
+                <data android:pathPattern=".*\\..*\\..*\\.html" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.html" />
+                <data android:pathPattern=".*\\.js" />
+                <data android:pathPattern=".*\\..*\\.js" />
+                <data android:pathPattern=".*\\..*\\..*\\.js" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.js" />
+                <data android:pathPattern=".*\\.css" />
+                <data android:pathPattern=".*\\..*\\.css" />
+                <data android:pathPattern=".*\\..*\\..*\\.css" />
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.css" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:mimeType="*/*" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="text/xml" />
+                <data android:mimeType="text/html" />
+                <data android:mimeType="text/css" />
+                <data android:mimeType="text/javascript" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RecordActivity" />
+        <activity android:name="tv.sdt.mvp.ui.Rxjava2DemoActivity" />
+        <activity android:name="tv.sdt.mvp.ui.LivePlayActivity" />
+        <activity android:name=".DoXeniaActivity" />
+        <activity
+            android:name=".PlayerActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="tv.fengmang.action.PLAYER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IndexActivity"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WebAdActivity" />
+        <activity android:name="tv.sdt.mvp.ui.CrashManagerActivity" />
+        <activity android:name=".ImageListActivity"/>
+        <activity android:name=".AsyncDownloadActivity"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>
